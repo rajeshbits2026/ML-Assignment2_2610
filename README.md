@@ -111,9 +111,10 @@ python -m streamlit run app.py
 
 ## 10. Links
 
-- **GitHub repository:** [Add the actual repository URL]
-- **Live Streamlit application:** [Add the actual deployed application URL]
-- **Dataset source:** https://archive.ics.uci.edu/dataset/602/dry%2Bbean
+
+- GitHub repository: https://github.com/rajeshbits2026/ML-Assignment2_2610
+- Live Streamlit application: https://ml-assignment22610-4zq2zklu5wva7l7bppw4nz.streamlit.app/
+- Dataset source: https://archive.ics.uci.edu/dataset/602/dry+bean
 
 
 
