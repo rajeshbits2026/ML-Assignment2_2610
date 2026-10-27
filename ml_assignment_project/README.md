@@ -50,6 +50,17 @@ The following results were obtained in the current experiment. Values are rounde
 AUC is calculated using macro one-vs-rest evaluation. Precision, Recall and F1-score use weighted averaging. MCC is the multiclass Matthews Correlation Coefficient.
 
 ## 5. Observations and Discussion
+## 5. Observations and Discussion
+
+| ML Model Name | Observation about model performance |
+|---|---|
+| Logistic Regression | Achieved an accuracy of 0.9214 and an AUC of 0.9948. Its performance was close to SVM, demonstrating that a linear classification model can perform strongly on the Dry Bean dataset. |
+| Decision Tree | Achieved an accuracy of 0.8920. Its overall performance was lower than that of Logistic Regression, KNN and SVM on the evaluated test set. |
+| KNN | Achieved an accuracy of 0.9166 and an MCC of 0.8992. It performed competitively but did not achieve the highest score on the reported metrics. |
+| Naive Bayes | Achieved an accuracy of 0.7639, the lowest among the five models. Its AUC was 0.9672, illustrating that AUC and accuracy measure different aspects of classification performance. |
+| Support Vector Machine (SVM) | Achieved the highest reported values for all six metrics: Accuracy (0.9221), AUC (0.9949), Precision (0.9224), Recall (0.9221), F1-score (0.9222) and MCC (0.9059). |
+| Overall Winner — SVM | SVM is the best-performing model in this experiment because it achieved the highest reported score across all six evaluation metrics. Its advantage over Logistic Regression is small. |
+
 
 **Logistic Regression:** The model achieved 92.14% accuracy and an AUC of 0.9948. Its results are close to those of SVM, indicating that a relatively simple linear classification model performs strongly on this dataset.
 
@@ -91,7 +102,6 @@ The uploaded CSV must contain the same input feature columns used during trainin
 
 ## 9. How to Run Locally
 
-
 (a). Install packages from `requirements.txt`.
 
 From the project directory, install the dependencies:
@@ -116,28 +126,6 @@ python -m streamlit run app.py
 - **Dataset source:** https://archive.ics.uci.edu/dataset/602/dry%2Bbean
 
 
+## 11. Important limitations
 
-
-
-
-
-
-
-
-## How to run
-1. Install packages from `requirements.txt`.
-2. Run the notebook from top to bottom to train models and create the project artifacts.
-3. From this folder, run `streamlit run app.py`.
-4. Upload a labelled CSV with the same feature columns and target column.
-
-## Repository contents
-- `app.py` — Streamlit evaluation interface
-- `requirements.txt` — dependencies
-- `README.md` — project documentation
-- `test_data.csv` — labelled held-out test data
-- `model/` — saved trained pipelines
-- `metadata.json` — feature, target, class, and model-file metadata
-- `model_comparison.csv` — measured comparison results
-
-## Important limitations
 The app evaluates labelled test data. It does not train or update models on uploaded data. Metric values can change if you change the dataset version, split, or model settings.
