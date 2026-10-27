@@ -50,7 +50,6 @@ The following results were obtained in the current experiment. Values are rounde
 AUC is calculated using macro one-vs-rest evaluation. Precision, Recall and F1-score use weighted averaging. MCC is the multiclass Matthews Correlation Coefficient.
 
 ## 5. Observations and Discussion
-## 5. Observations and Discussion
 
 | ML Model Name | Observation about model performance |
 |---|---|
